@@ -11,10 +11,21 @@
         let x = 6;
         var y = 5;
         const z = 7;
+
         x = 42;
         const demo = document.getElementById("demo");
         demo.innerHTML = x
-        console.log(z)
+
+        const carros = ["fusca", "Kombi", "Belina"];
+        carros[0] = "Toyota"
+        carros.push("Audi")
+        demo.innerText = carros
+
+        const carro = {Marca: "Fiat", Modelo: "Mobi", Cor: "Preto"};
+        carro.Cor = "Vermelho";
+        carro.Proprientario = "Grabrielly";
+        
+        demo.innerHTML = carro.Proprientario;
     </script>
 </body>
 </html>

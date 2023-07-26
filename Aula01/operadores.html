@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Operadores</h1>
+    <p id="demo"></p>
+    <script>
+      //Aritimedicos
+      // + - *, ** exp,/, %modulo, ++incremento, --decremento
+      let x = 5;
+      let y = 2;
+      let z = 0;
+      z -= x;
+      const demo = document.getElementById("demo");
+      demo.innerHTML = z;
+
+      //Atribuição
+      //= +=  -= *= /= %= **=
+      let a = 3;
+      a **= y;
+      demo.innerHTML = a;
+
+      //Comparação (bool)
+      /*  === - igual a (valor) e igual a(tipo)
+            == - igual
+            != - diferente
+            !== diferente em valor, ou diferente em tipo
+            > maior
+            < menor
+            >= <=
+            ?:
+        */
+
+      let texto1 = "a";
+      let texto2 = "b";
+      let resultado = texto1 < texto2;
+
+      demo.innerHTML = resultado;
+    </script>
+  </body>
+</html>
