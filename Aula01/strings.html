@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Template Literals</h1>
+    <p>Os templates Literals permitem variáveis dentro de strings</p>
+
+    <p id="demo"></p>
+    <p>Template Literals não são suporados pelo Internet Explorer</p>
+    
+    <script>
+      let nome = "Felipe";
+      let sobrenome = "Atoado";
+
+      let texto = `Bem-vindo ${nome} ${sobrenome}!`;
+      document.getElementById("demo").innerHTML = texto;
+    </script>
+  </body>
+</html>
