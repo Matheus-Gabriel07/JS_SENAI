@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Propriedades de Numero</title>
+  </head>
+  <body>
+    <h1>Propriedades de número</h1>
+    <h2>Propriedade épslon</h2>
+    <p>
+      A diferença entre 1 e o menor numero de onto flutuante maior do que 1 em
+      JS é:
+    </p>
+    <p id="demo"></p>
+
+    <p>
+      Number.Max_VAlUE é constante representando o maior número possível em JS
+    </p>
+    <p id="demo1"></p>
+
+    <p>
+        Number.MIN_VALUE é constante representando o menor número possível em JS
+      </p>
+      <p id="demo2"></p>
+    <script>
+      let x = Number.EPSILON;
+      document.getElementById("demo").innerHTML = x;
+      x = Number.MAX_VALUE;
+      document.getElementById("demo1").innerHTML = x
+      x = Number.MIN_VALUE;
+      document.getElementById("demo2").innerHTML = x
+    </script>
+  </body>
+</html>
