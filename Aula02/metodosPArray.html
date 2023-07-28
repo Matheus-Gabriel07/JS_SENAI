@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodos para Array</title>
+</head>
+<body>
+    <h1>Metodos para Array</h1>
+    <p>A propriedade leght retorna o comprimento do array</p>
+
+    <p id="demo1"></p>
+
+    <p>O metodo toString() retorna um arrary com uma string </p>
+    <p id="demo2"></p>
+
+    <p>O metodo pop() remove o ultimo elemento de um array</p>
+    <p id="demo3"></p>
+
+    <p>O metodo push() acrescenta um novo elemnto no array</p>
+    <p id="demo4"></p>
+
+    <p></p>
+    <script>
+        const fruta = ["Abacaxi", "Uva","Maça","Goiaba"];
+        const tamanho= fruta.length;
+        document.getElementById("demo1").innerHTML = tamanho
+        document.getElementById("demo2").innerHTML = fruta.toString();
+        fruta.pop();
+        document.getElementById("demo3").innerHTML = fruta;
+        fruta.push("Pêra");
+        document.getElementById("demo4").innerHTML = fruta;
+
+    </script>
+</body>
+</html>
