@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Numeros</title>
+  </head>
+  <body>
+    <h2>Número no JS</h2>
+    <p>Números podem ser escritos com, ou sem vírgula</p>
+    <p id="demo"></p>
+
+    <p>Numeros pequenos ou enormes podem ser escrito em notação cientifica</p>
+    <p id="demo2"></p>
+
+    <p>
+      Numeros interos (escrtios sem nenhum atributo) são preciso até 15 dígitos
+    </p>
+    <p id="demo3"></p>
+
+    <p>Aritimética de ponto flutuante nem sempre é 100% exata</p>
+    <p id="demo4"></p>
+
+    <p>Se você adicionar dois números, o resultado será um numero</p>
+    <p id="demo5"></p>
+
+    <p>
+      Se você adicionar duas strings numericas, o resultado será uma string
+      concatenada
+    </p>
+    <p id="demo6"></p>
+
+    <p>
+      Se você adicionar um numero e uma strings, o resultado será uma string
+      concatenada
+    </p>
+    <p id="demo7"></p>
+
+    <p>Um erro comum é esperar que o resultado seja 30</p>
+    <p id="demo8"></p>
+
+    <p>Um erro comum é esperar que o resultado seja 102030</p>
+    <p id="demo9"></p>
+
+    <p>O JS sempre tentará converter strings em numero em todas as outras operaç~poes numericas</p>
+    <p id="demo10"></p>
+
+    <script>
+      let x = 3.14;
+      let y = 3;
+      document.getElementById("demo").innerHTML = x + "<br>" + y;
+      x = 123e5;
+      y = 123e-5;
+      document.getElementById("demo2").innerHTML = x + "<br>" + y;
+      x = 999999999999999;
+      y = 9999999999999999;
+      document.getElementById("demo3").innerHTML = x + "<br>" + y;
+      x = 0.2 + 0.1;
+      y = 0.4 + 5.0;
+      document.getElementById("demo4").innerHTML = x + "<br>" + y;
+      x = 10;
+      y = 20;
+      let z = x + y;
+      document.getElementById("demo5").innerHTML = z + "<br>";
+      x = "10";
+      y = "20";
+      z = x + y;
+      document.getElementById("demo6").innerHTML = z + "<br>";
+      x = "10";
+      y = 20;
+      z = x + y;
+      document.getElementById("demo7").innerHTML = z + "<br>";
+      x = 10;
+      y = 20;
+      z = x + y;
+      document.getElementById("demo8").innerHTML =
+        "o resultado é: " + (x + y) + "<br>";
+      x = 10;
+      y = 20;
+      z = "30";
+      let resultado = x + y + z;
+      document.getElementById("demo9").innerHTML = resultado + "<br>";
+      x = "100";
+      y = "10";
+      z = x/y;
+      document.getElementById("demo10").innerHTML = z + "<br>";
+    </script>
+  </body>
+</html>
