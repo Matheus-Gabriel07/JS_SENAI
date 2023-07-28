@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metodos para Número</title>
+  </head>
+  <body>
+    <h1>Metodos para Numeros</h1>
+    <p>O método toString() pode exibir numeros em base 2 até 36</p>
+    <p id="demo1"></p>
+
+    <script>
+      let numero = 32;
+      document.getElementById("demo1").innerHTML = "32 em decimal = "+"<br><br>"+
+      "Hexatrigesimal (base 36): "+numero.toString(36) +"<br>"+
+      "Duotrigesimal (base 32): "+numero.toString(32) +"<br>"+
+      "Hexadecimal (base 16): "+numero.toString(16) +"<br>"+
+      "Duadecimal (base 12): "+numero.toString(12) +"<br>"+
+      "Decimal (base 10): "+numero.toString(10) +"<br>"+
+      "Octal (base 8): "+numero.toString(8) +"<br>"+
+      "Binário (base 2): "+numero.toString(2) +"<br>";
+    </script>
+  </body>
+</html>
