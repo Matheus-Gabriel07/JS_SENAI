@@ -1,25 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Metodos para Número</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <h1>Metodos para Numeros</h1>
     <p>O método toString() pode exibir numeros em base 2 até 36</p>
     <p id="demo1"></p>
 
+    <p>O metodo toExponetial() retorna uma string com o numero arredondado e escrito usandoa notação exponencial
+    </p>
+    <p id="demo2"></p>
+
+    <p>O metodo toFixed() retorna uma string com o número escrito com uma quantidade especificada em casas depois da
+        vírgula.
+        toFixed(2)
+    </p>
+    <p id="demo3"></p>
+
     <script>
-      let numero = 32;
-      document.getElementById("demo1").innerHTML = "32 em decimal = "+"<br><br>"+
-      "Hexatrigesimal (base 36): "+numero.toString(36) +"<br>"+
-      "Duotrigesimal (base 32): "+numero.toString(32) +"<br>"+
-      "Hexadecimal (base 16): "+numero.toString(16) +"<br>"+
-      "Duadecimal (base 12): "+numero.toString(12) +"<br>"+
-      "Decimal (base 10): "+numero.toString(10) +"<br>"+
-      "Octal (base 8): "+numero.toString(8) +"<br>"+
-      "Binário (base 2): "+numero.toString(2) +"<br>";
+        let numero = 32;
+        document.getElementById("demo1").innerHTML = "32 em decimal = " + "<br><br>" +
+            "Hexatrigesimal (base 36): " + numero.toString(36) + "<br>" +
+            "Duotrigesimal (base 32): " + numero.toString(32) + "<br>" +
+            "Hexadecimal (base 16): " + numero.toString(16) + "<br>" +
+            "Duadecimal (base 12): " + numero.toString(12) + "<br>" +
+            "Decimal (base 10): " + numero.toString(10) + "<br>" +
+            "Octal (base 8): " + numero.toString(8) + "<br>" +
+            "Binário (base 2): " + numero.toString(2) + "<br>";
+
+        let x = 9.656;
+        document.getElementById("demo2").innerHTML =
+            x.toExponential() + "<br>" +
+            x.toExponential(2) + "<br>" +
+            x.toExponential(4) + "<br>" +
+            x.toExponential(6) + "<br>";
+        x = 10
+        document.getElementById("demo3").innerHTML =
+            x.toFixed() + "<br>" +
+            x.toFixed(2) + "<br>" +
+            x.toFixed(4) + "<br>" +
+            x.toFixed(6) + "<br>"
+
     </script>
-  </body>
+</body>
+
 </html>
