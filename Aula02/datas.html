@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datas</title>
+</head>
+<body>
+    <h1>Datas no JS</h1>
+    <h2>Usando new Date()</h2>
+    <p>new Date() sem argumentos, criar um objeto de data com a dara e a hora atual</p>
+    <p id="demo1"></p>
+
+    <p>new Date() com argumento de data</p>
+    <p id="demo2"></p>
+    <script>
+        const d = new Date();
+        document.getElementById("demo1").innerHTML = d;
+
+        const diver = new Date("3070-04-01")
+        document.getElementById("demo2").innerHTML = diver;
+    </script>
+</body>
+</html>
