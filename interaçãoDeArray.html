@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interação de Array</title>
+  </head>
+  <body>
+    <h1>Interação de Array</h1>
+    <h2>Metodo forEach()</h2>
+    <p>Esse método chama uma função para cada elemento do array</p>
+    <p id="demo"></p>
+
+    <h2>Metodo map()</h2>
+    <p>Cria um novo array executando uma função para cada elemento</p>
+    <p id="demo1"></p>
+
+    <h2>Método Filter()</h2>
+    <p>Cria um novo elemento array ex</p>
+    <p id="demo2"></p>
+    <script>
+      const numeros = [45, 4, 9, 16, 25];
+      let texto = "";
+      numeros.forEach(funcao);
+
+      function funcao(valor) {
+        texto += valor + "<br>";
+      }
+      document.getElementById("demo").innerHTML = texto;
+      const numvezDois = numeros.map(otrFuncao);
+
+      function otrFuncao(value) {
+        return value*2
+      }
+      document.getElementById("demo1").innerHTML = numvezDois;
+
+      const menorDe18 = numeros.filter(minhaTerceiraFunc);
+      function minhaTerceiraFunc(value){
+        return value > 18
+      }
+      document.getElementById("demo2").innerHTML = menorDe18;
+      
+    </script>
+  </body>
+</html>
