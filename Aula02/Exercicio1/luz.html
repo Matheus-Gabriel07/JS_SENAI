@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luz</title>
+  </head>
+  <body>
+    <h2>O que o JS pode fazer</h2>
+    <p>O JS pode mudar atributos do html</p>
+    <p>Neste caso o JS muda o valor do atributo 'src' de uma imagem</p>
+
+    <img src="luz_desligada.png" id="image" alt=""  style="max-width: 150px;"/>
+
+    <button
+      onclick="document.getElementById('image').src = '/Aula02/Exercicio1/luz_ligada.png'">
+      Ligar a luz
+    </button>
+
+    <button
+      onclick="document.getElementById('image').src = '/Aula02/Exercicio1/luz_desligada.png'">
+      Desligar a luz
+    </button>
+  </body>
+</html>
