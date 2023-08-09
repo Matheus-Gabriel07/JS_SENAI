@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operador Ternário</title>
+  </head>
+  <body>
+    <h1>Operador ternário ?:</h1>
+    <p>Entre com idade e clique no botão</p>
+    <input type="text" id="idade" value="18" />
+    <button onclick="funcao()">Experimente</button>
+    <p id="demo"></p>
+    <script>
+      function funcao() {
+        const idade = document.getElementById("idade").value;
+        let maioridade = idade < 18 ? "Menor de idade" : "Maior de idade";
+        document.getElementById("demo").innerHTML = "Você é " + maioridade;
+      }
+    </script>
+  </body>
+</html>

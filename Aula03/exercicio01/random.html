@@ -1,5 +1,11 @@
+<!--
+    Autores:
+        Kaique Magalhães Santos
+        Matheus Gabriel Santos Silva
+-->
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,23 +18,30 @@
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main class="container">
-      <h1>Jogo de dados</h1>
-      <section class="dados">
-        <p id="dice1"><i class="fi fi-br-dice-one"></i></p>
-        <p id="dice2"><i class="fi fi-br-dice-two"></i></p>
-        <p id="dice3"><i class="fi fi-br-dice-three"></i></p>
-        <p id="dice4"><i class="fi fi-br-dice-four"></i></p>
-        <p id="dice5"><i class="fi fi-br-dice"></i></p>
-        <p id="dice6"><i class="fi fi-br-dice-six"></i></p>
-      </section>
-
-      <div class="container_roll">
-        <h2>Aperte o botão</h2>
-        <button onclick="randomButton()">Jogar</button>
-        <p id="valorDado"></p>
+      <div class="contents">
+        <h1>Jogo de dados</h1>
+        <section class="dados">
+          <div class="results">
+            <div class="results-details">
+              <p id="dice1"><i class="fi fi-br-dice-one"></i></p>
+            </div>
+            <p id="valorDado1">X</p>
+          </div>
+          <div class="results">
+            <div class="results-details">
+              <p id="dice2"><i class="fi fi-br-dice-two"></i></p>
+            </div>
+            <p id="valorDado2">X</p>
+          </div>
+        </section>
+        <div class="container_roll">
+          <h2>Aperte o botão</h2>
+          <button onclick="randomButton()">Jogar</button>
+        </div>
       </div>
     </main>
     <script src="script.js"></script>
