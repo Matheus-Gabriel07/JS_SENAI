@@ -10,42 +10,79 @@
     <p id="demo"></p>
 
     <h2>Função de arredondamento</h2>
-    <p>A função 'Math.round(x)' retorna o valor arrendodado para o inteiro mais próximo</p>
+    <p>
+      A função 'Math.round(x)' retorna o valor arrendodado para o inteiro mais
+      próximo
+    </p>
     <p id="demo1"></p>
 
     <h2>Função 'Math.ceil(x)'</h2>
-    <p>A função Math.ceil(x) arredonda para cima qualquer valor inserido e transforma em inteiro</p>
+    <p>
+      A função Math.ceil(x) arredonda para cima qualquer valor inserido e
+      transforma em inteiro
+    </p>
     <p id="demo2"></p>
 
     <h2>Função 'Math.ceil(x)'</h2>
-    <p>A função Math.floor(x) arredonda para baixo qualquer valor inserido e transforma em inteiro</p>
+    <p>
+      A função Math.floor(x) arredonda para baixo qualquer valor inserido e
+      transforma em inteiro
+    </p>
     <p id="demo3"></p>
 
     <h2>Função 'Math.trunc(x)'</h2>
     <p>A função Math.trunc(x) retorna a barte inteira de um número</p>
     <p id="demo4"></p>
 
-    <h2>Função 'Math.pow(x)'</h2>
-    <p>A função Math.pow(x) </p>
-    <p id="demo4"></p>
+    <h2>Função 'Math.pow(x, y)'</h2>
+    <p>A função Math.pow(x, y) retorna o valor de x elevado À potência de y</p>
+    <p id="demo5"></p>
+
+    <h2>Função 'Math.sqrt(x)'</h2>
+    <p>A função Math.sqrt(x) retorna o valor da raiz quadrada de x</p>
+    <p id="demo6"></p>
+
+    <h2>Função 'Math.random(x)'</h2>
+    <p>
+      A função Math.random(x) retorna um valor aletório entre 0, inclusive zero,
+      e 1
+    </p>
+    <p id="demo7"></p>
 
     <script>
       document.getElementById("demo").innerHTML =
-        "<p><strong>Math.E: </strong>" + Math.E + "</p>" +
-        "<p><strong>Math.PI: </strong>" + Math.PI + "</p>" +
-        "<p><strong>Math.SQRT2: </strong>" + Math.SQRT2 + "</p>" +
-        "<p><strong>Math.SQRT1_1: </strong>" + Math.SQRT1_2 + "</p>" +
-        "<p><strong>Math.LN2: </strong>" + Math.LN2 + "</p>" +
-        "<p><strong>Math.LN10: </strong>" + Math.LN10 + "</p>" +
-        "<p><strong>Math.LOG2E: </strong>" + Math.LOG2E + "</p>" +
-        "<p><strong>Math.LOG10E: </strong>" + Math.LOG10E + "</p>";
+        "<p><strong>Math.E: </strong>" +
+        Math.E +
+        "</p>" +
+        "<p><strong>Math.PI: </strong>" +
+        Math.PI +
+        "</p>" +
+        "<p><strong>Math.SQRT2: </strong>" +
+        Math.SQRT2 +
+        "</p>" +
+        "<p><strong>Math.SQRT1_1: </strong>" +
+        Math.SQRT1_2 +
+        "</p>" +
+        "<p><strong>Math.LN2: </strong>" +
+        Math.LN2 +
+        "</p>" +
+        "<p><strong>Math.LN10: </strong>" +
+        Math.LN10 +
+        "</p>" +
+        "<p><strong>Math.LOG2E: </strong>" +
+        Math.LOG2E +
+        "</p>" +
+        "<p><strong>Math.LOG10E: </strong>" +
+        Math.LOG10E +
+        "</p>";
 
       document.getElementById("demo1").innerHTML = Math.round(4.45);
       document.getElementById("demo2").innerHTML = Math.ceil(6.7);
       document.getElementById("demo3").innerHTML = Math.floor(5.8);
       document.getElementById("demo4").innerHTML = Math.trunc(0.8);
-      document.getElementById("demo5").innerHTML = Math.pow(0.8);
-
+      document.getElementById("demo5").innerHTML = Math.pow(48, 415);
+      document.getElementById("demo6").innerHTML = Math.sqrt(49);
+      document.getElementById("demo7").innerHTML = Math.ceil(Math.random() * 6);
     </script>
   </body>
 </html>

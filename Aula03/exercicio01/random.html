@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo de dados</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Jogo de dados</h1>
+      <section class="dados">
+        <p id="dice1"><i class="fi fi-br-dice-one"></i></p>
+        <p id="dice2"><i class="fi fi-br-dice-two"></i></p>
+        <p id="dice3"><i class="fi fi-br-dice-three"></i></p>
+        <p id="dice4"><i class="fi fi-br-dice-four"></i></p>
+        <p id="dice5"><i class="fi fi-br-dice"></i></p>
+        <p id="dice6"><i class="fi fi-br-dice-six"></i></p>
+      </section>
+
+      <div class="container_roll">
+        <h2>Aperte o botão</h2>
+        <button onclick="randomButton()">Jogar</button>
+        <p id="valorDado"></p>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

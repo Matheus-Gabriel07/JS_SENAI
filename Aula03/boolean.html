@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booleano</title>
+  </head>
+  <body>
+    <h1>Booleanos 'JS'</h1>
+    <p>Exibi o valor Boolean(10 > 9)</p>
+    <p id="demo"></p>
+
+    <p>Exibi o valor Boolean(10 > 9)</p>
+    <p id="demo1"></p>
+
+    <p>Exibi o valor Boolean(10 > 9)</p>
+    <p id="demo2"></p>
+
+    <p id="demo3"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML = Boolean(10 > 9);
+        document.getElementById("demo1").innerHTML = 10 > 9;
+        document.getElementById("demo2").innerHTML =
+          "100 é " + Boolean(100) + "<br>" +
+          "3.14 é " + Boolean(3.14) + "<br>" +
+          "-15 é " + Boolean(15) + "<br>" +
+          "Qualquer String não vazia é " + Boolean("Qualquer String não vazia") + "<br>" +
+          "Até mesmo a String false é " + Boolean("false") + "<br>" +
+          "Qualque expressão que não seja zero é " + Boolean(1 + 7 + 3.14) + "<br>";
+        
+        let w = 10 / "alô";
+        let x;
+        let y = null;
+        let z = false;
+        document.getElementById("demo3").innerHTML =
+          "0 é " + Boolean(0) + "<br>" +
+          "-0 é " + Boolean(-0) + "<br>" +
+          "Um String vazia é " + Boolean("") + "<br>" +
+          "Um valor indefinido é " + Boolean(x) + "<br>" +
+          "Um valor nulo é " + Boolean(y) + "<br>" +
+          "Um valor false é " + Boolean(z) + "<br>" +
+          "Um valor NaN " + Boolean(w) + "<br>";
+    </script>
+  </body>
+</html>

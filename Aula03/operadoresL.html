@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Operadores Lógicos</h1>
+    <h2>Operador &&</h2>
+    <p id="demo1"></p>
+
+    <h2>Operador ||</h2>
+    <p id="demo2"></p>
+
+    <h2>Operador !</h2>
+    <p id="demo3"></p>
+    <script>
+      let x = 6;
+      let y = 3;
+      document.getElementById("demo1").innerHTML =
+        (x < 10 && y > 1) + "<br>" + (x < 10 && y < 1) + "<br>";
+
+      document.getElementById("demo2").innerHTML =
+        (x < 10 || y > 1) + "<br>" + (x < 10 || y < 1) + "<br>";
+
+      document.getElementById("demo3").innerHTML =
+        !(x < 10) + "<br>" + !(y < 1) + "<br>";
+    </script>
+  </body>
+</html>
