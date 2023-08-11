@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Each</title>
+  </head>
+  <body>
+    <h2>Método For Each()</h2>
+    <p>
+      O método 'For Each' uma vex para cada elemento do array
+      <strong id="demo"></strong>
+    </p>
+    <script>
+        const numbers = [23, 323, 54, 65, 63]
+        let texto = "";
+        numbers.forEach(funcao);
+        
+        function funcao(valor, indice, array) {
+            texto += valor + "<br>";
+        }
+
+        document.getElementById("demo").innerHTML = texto;
+        </script>
+  </body>
+</html>

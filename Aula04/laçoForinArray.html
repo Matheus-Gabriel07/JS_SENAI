@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For In Array</title>
+  </head>
+  <body>
+    <h2>Laço For In no 'JS'</h2>
+    <p>
+      A estrutura de repetição 'For In' faz um varredura pelas propriedades de
+      um objeto
+      <strong id="demo"></strong>
+    </p>
+
+    <script>
+      const pessoa = ["Kaique", "Magalhães", 25];
+      let texto = "";
+
+      for (let x in pessoa) {
+        texto += pessoa[x] + " ";
+      }
+      document.getElementById("demo").innerHTML = texto;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Switch em 'JS'</h2>
+      <div class="container-details">
+        <p>Hoje é: <strong id="demo"></strong></p>
+      </div>
+    </div>
+
+    <script>
+      let day;
+      
+      if (new Date().getDay() == 0) {
+        day = "Domingo";
+      } else if (new Date().getDay() == 1) {
+        day = "Segunda-feira";
+      } else if (new Date().getDay() == 2) {
+        day = "Terça-feira";
+      } else if (new Date().getDay() == 3) {
+        day = "Quarta-feira";
+      } else if (new Date().getDay() == 4) {
+        day = "Quinta-feira";
+      } else if (new Date().getDay() == 5) {
+        day = "Sexta-feira";
+      } else if (new Date().getDay() == 6) {
+        day = "Sabado";
+      }
+
+      document.getElementById("demo").innerHTML = day;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Of</title>
+  </head>
+  <body>
+    <h2>Laço For Of no 'JS'</h2>
+    <p>
+      A estrutura de repetição 'For Of' retorna o valor de um elemento de array,
+      ou objeto, em vez de retornar o índice ou a chave.
+      <strong id="demo"></strong>
+    </p>
+
+    <script>
+      const pessoa = ["Kaique", "Magalhães", 25];
+      let texto = "";
+
+      for (let x of pessoa) {
+        texto += x + " ";
+      }
+      document.getElementById("demo").innerHTML = texto;
+    </script>
+  </body>
+</html>
