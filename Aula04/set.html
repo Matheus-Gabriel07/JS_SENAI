@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Set</title>
+  </head>
+  <body>
+    <h2>Conjuntos de Dodos no 'JS'</h2>
+    <p>Criar um conjunto de dados a partir de um array</p>
+    <p id="demo"></p>
+    <script>
+        //Conjunto de dados
+        const letras = new Set(["a","b","c"]);
+
+        letras.add("d")
+        letras.add("e")
+        letras.add("f")
+        
+        document.getElementById("demo").innerHTML = letras.size;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type of</title>
+</head>
+<body>
+    <p>Retorna um valor, expressão, função</p>
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML =
+        "Mariana é " + typeof "Mariana" + "<br>" +
+        "3.14 é " + typeof 3.14 + "<br>" +
+        "NaN é " + typeof Nan + "<br>" +
+        "false é " + typeof false + "<br>" +
+        "true é " + typeof "Mariana" + "<br>" +
+        "[1, 2, 3, 4]" + typeof [1, 2, 3, 4] + "<br>" +
+        "{nome:\'Bia',idade:12 } é" + typeof {nome:'Bia',idade:12 }  + "<br>" +
+        "new Date() é " + typeof new Date() + "<br>" +
+        "functions() {} é " + typeof function() {} + "<br>" +
+        "meuCarro é " + typeof meuCarro + "<br>" +
+        "null é " + typeof null + "<br>" +
+        "Victor e Vinicius são " + typeof "Victor e Vinicius" + "<br>";
+        </script>
+</body>
+</html>

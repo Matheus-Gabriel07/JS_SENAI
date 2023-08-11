@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>maps</title>
+  </head>
+  <body>
+    <h2>Objetos JS tipo JS</h2>
+    <p>Criar um mapa a partir de um array</p>
+    <p id="demo"></p>
+
+    <script>
+      const frutas = new Map([
+        ["Maças", 5],
+        ["Bananas", 8],
+        ["Laranjas", 6],
+      ]);
+      frutas.set("Abacaxi", 7);
+      document.getElementById("demo").innerHTML =
+        frutas.get("Abacaxi").toFixed(2) +
+        "<br>Temos carambolas? " +
+        frutas.has("Carambola") +
+        "<br>Temos bananas? " +
+        frutas.has("Bananas");
+        
+    </script>
+  </body>
+</html>
