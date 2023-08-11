@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>If Else</title>
+  </head>
+  <body>
+    <h2>If</h2>
+    <p>Exibir "Bom dia!"se a hora for menor que 12:00</p>
+    <p id="day">Boa tarde!</p>
+
+    <script>
+        if(new Date().getHours() < 12) {
+            document.getElementById("day").innerHTML = "Bom dia!";
+        } else if (new Date().getHours() < 12) {
+            document.getElementById("day").innerHTML = "Bom noite!";
+        }
+    </script>
+  </body>
+</html>
