@@ -1,0 +1,59 @@
+[09:48] WILLIAM JOSÉ SANTOS MENEZES
+
+<!DOCTYPE html>
+
+<html>
+  <body>
+    <h2>Como lidar comerros no JavaScript</h2>
+
+    <p>Vamos produzir um erro proposital no JavaScript</p>
+
+    <p id="demo1"></p>
+
+    <p>Por favor insira um número entre 5 e 10:</p>
+
+    <input id="demo2" type="text" />
+
+    <button type="button" onclick="minhaFuncao()">Teste a entrada</button>
+
+    <p id="p1"></p>
+
+    <script>
+      try {
+        adddlert("Bem-vindo, hóspede!");
+      } catch (e) {
+        document.getElementById("demo1").innerHTML = e.message;
+      }
+
+      function minhaFuncao() {
+        const messagem = document.getElementById("demo1");
+
+        messagem.innerHTML = "";
+
+        let X = document.getElementById("demo2").value;
+
+        try {
+          if (X.trim() == "") {
+            throw "Não está entre 5 e 10";
+          }
+
+          if (isNaN(X)) {
+            throw "Não é um número!";
+          }
+
+          X = Number(X);
+
+          if (X < 5) {
+            throw "Muitp baixa.";
+          }
+
+          if (X > 10) {
+            throw "Muito alta.";
+          }
+        } catch (e) {
+            messagem.innerHTML = "A entrada é " + e;
+        }
+      }
+    </script>
+  </body>
+</html>
