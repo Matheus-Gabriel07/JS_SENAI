@@ -1,21 +1,18 @@
-[09:48] WILLIAM JOSÉ SANTOS MENEZES
-
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
   <body>
     <h2>Como lidar comerros no JavaScript</h2>
-
     <p>Vamos produzir um erro proposital no JavaScript</p>
-
     <p id="demo1"></p>
 
     <p>Por favor insira um número entre 5 e 10:</p>
-
     <input id="demo2" type="text" />
-
     <button type="button" onclick="minhaFuncao()">Teste a entrada</button>
-
     <p id="p1"></p>
 
     <script>
@@ -51,7 +48,9 @@
             throw "Muito alta.";
           }
         } catch (e) {
-            messagem.innerHTML = "A entrada é " + e;
+          messagem.innerHTML = "A entrada é " + e;
+        } finally {
+          document.getElementById("demo2").value = "";
         }
       }
     </script>
