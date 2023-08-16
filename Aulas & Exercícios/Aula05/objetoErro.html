@@ -19,6 +19,10 @@
     <p>Não é possível executar código com erro erro de sintaxe</p>
     <p id="demo3"></p>
 
+    <p id="demo4"></p>
+
+    <p id="demo5"></p>
+
     <script>
       let num = 1;
 
@@ -39,6 +43,18 @@
         eval("Object 'assas")
       } catch (error) {
         document.getElementById("demo3").innerHTML = error.name;
+      }
+
+      try {
+        num.toUpperCase()
+      } catch (error) {
+        document.getElementById("demo4").innerHTML = error.name;
+      }
+
+      try {
+        decodeURI("%%%%")
+      } catch (error) {
+        document.getElementById("demo5").innerHTML = error.name;
       }
     </script>
   </body>

@@ -8,6 +8,8 @@
   <body>
     <p id="demo"></p>
 
+    <p id="demo1"></p>
+    
     <script>
         let texto = "";
         let i = 0;
@@ -16,7 +18,18 @@
             texto += `O numero é ${i}`
             i++ 
         }
-        document.getElementById("demo").innerHTML = texto
+        document.getElementById("demo").innerHTML = texto + "<br>"
+
+        let text = " ";
+        let k = 0;
+
+        do {
+          text += "<br> O numero é " + k;
+          k++;
+
+        } while (k < 10000000);
+        document.getElementById("demo1").innerHTML = text + "<br>"
+
     </script>
   </body>
 </html>

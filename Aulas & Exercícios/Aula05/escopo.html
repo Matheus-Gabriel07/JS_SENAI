@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Escopo de variável JS</h2>
+    <p id="demo1"></p>
+
+    <script>
+      function number() {
+       let x = 2;
+       return x;
+      };
+
+      document.getElementById("demo1").innerHTML = number();
+    </script>
+  </body>
+</html>
