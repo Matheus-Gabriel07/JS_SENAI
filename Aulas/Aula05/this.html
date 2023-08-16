@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Palavra this</h2>
+    <p id="demo1"></p>
+
+    <p>Windo</p>
+    <p id="demo2"></p>
+
+    <p id="demo3"></p>
+    <button onclick="this.style.display='none'">Clique para remover</button>
+
+    <script>
+      const pessoa = {
+        nome: "Gilberto",
+        sobrenome: "Maga",
+        id: 5566,
+        nomeCompleto: function () {
+          return this.nome + " " + this.sobrenome;
+        },
+      };
+
+      document.getElementById("demo1").innerHTML = pessoa.nomeCompleto();
+
+      document.getElementById("demo2").innerHTML = this;
+      </script>
+  </body>
+</html>

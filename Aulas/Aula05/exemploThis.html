@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>This Exemplo</title>
+  </head>
+  <body>
+    <h1>Palavra chave this no JS</h1>
+    <p>
+      Neste exemplo, this se refere a pessoa2, mesmo sendo um método de pessoa1.
+    </p>
+    <p id="demo1"></p>
+
+    <script>
+      const pessoa1 = {
+        nomeCompleto: function () {
+          return this.nome + " " + this.sobrenome;
+        },
+      };
+
+      const pessoa2 = {
+        nome: "Kaique",
+        sobrenome: "Moreira",
+      };
+
+      let resposta = pessoa1.nomeCompleto.call(pessoa2)
+      document.getElementById("demo1").innerHTML = resposta
+    </script>
+  </body>
+</html>
