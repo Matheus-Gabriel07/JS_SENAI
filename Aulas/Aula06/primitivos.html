@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h2>Valores Primitivos armazenados em variáveis</h2>
+    <p id="demo"></p>
+
+    <h2>Objetos</h2>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <script>
+      let pessoa = "Heloisa";
+      document.getElementById("demo").innerHTML = pessoa;
+
+      let pessoa2 = {
+        nome: "Heloisa",
+        sobrenome: "Fernanda",
+        idade: 23,
+        cabelo: "castanho",
+      };
+
+      const pessoa3 = {};
+      pessoa3.nome = "Kaique";
+      pessoa3.sobrenome = "Fernando";
+      pessoa3.idade = 32;
+      pessoa3.cabelo = "castanho";
+      document.getElementById("demo2").innerHTML =
+        pessoa3.nome + " " + pessoa3.sobrenome + " tem " + pessoa3.idade;
+
+      const pessoa4 = new Object();
+      pessoa4.nome = "Kaique";
+      pessoa4.sobrenome = "Fernando";
+      pessoa4.idade = 32;
+      pessoa4.cabelo = "castanho";
+      document.getElementById("demo3").innerHTML =
+        pessoa4.nome + " " + pessoa4.sobrenome + " tem " + pessoa4.idade;
+
+      const serHumano = pessoa4;
+      serHumano.idade = 5;
+      document.getElementById("demo4").innerHTML =
+        pessoa4.nome + " " + pessoa4.sobrenome + " tem " + pessoa4.idade;
+
+      const mulher = pessoa;
+      mulher = "Eulinda";
+      document.getElementById("demo5").innerHTML = pessoa;
+
+      document.getElementById("demo6").innerHTML =
+        pessoa4.nome + " " + pessoa4.sobrenome + " tem " + pessoa4.idade;
+    </script>
+  </body>
+</html>
