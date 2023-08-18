@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h2>Propriedades de um objeto</h2>
     <p id="demo"></p>
     <p id="demo1"></p>
@@ -13,33 +13,42 @@
     <p id="demo3"></p>
 
     <script>
-        const pessoa = {
-            nome: "Matheus",
-            sobrenome: "Silva",
-            idade: 18
-        }
+      const pessoa = {
+          nome: "Matheus",
+          sobrenome: "Silva",
+          idade: 18
+      }
 
-        let texto = "";
-        for(let i in pessoa) {
-            texto += pessoa[i] + " ";
-        }
-        document.getElementById("demo").innerHTML = texto;
+      let texto = "";
+      for(let i in pessoa) {
+          texto += pessoa[i] + " ";
+      }
+      document.getElementById("demo").innerHTML = texto;
 
-        pessoa.naturalidade = "SP"
-        document.getElementById("demo1").innerHTML = "A naturalidade é " + pessoa.naturalidade;
+      pessoa.naturalidade = "SP"
+      document.getElementById("demo1").innerHTML = "A naturalidade é " + pessoa.naturalidade;
 
-        delete pessoa.idade
-        document.getElementById("demo2").innerHTML = "A idade dele é " + pessoa.idade;
+      delete pessoa.idade
+      document.getElementById("demo2").innerHTML = "A idade dele é " + pessoa.idade;
 
-        const heloisa = {
-            nome: "André Luis",
-            idade: 45,
-            veiculos: {
-                carro1: "Renaul",
-                carro2: "Corsa",
-                moto: "Harley",
+      let x;
+      const heloisa = {
+          nome: "André Luis",
+          idade: 45,
+          veiculos: [
+              {nome: "Renaul", modelos: ["Logan, Sandero"]},
+              {nome: "Chevrolet", modelos: ["Corsa, Cruiser"]},
+              {nome: "Harley", modelos: ["Fat Boy", "Stree Glide"]},
+        ]
+      }
+      
+      for(let i in heloisa.veiculos) {
+        x += "<h2>" + heloisa.veiculos[i].nome + "</h2>";
+            for(let j in heloisa.veiculos[i].modelos) {
+                x += heloisa.veiculos[i].modelos[j];
             }
-        }
+      }
+      document.getElementById("demo3").innerHTML = x;
     </script>
-</body>
+  </body>
 </html>
