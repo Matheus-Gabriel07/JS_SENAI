@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Setters e Getters em JS</h2>
+    <p>
+      Getters e Setters permitem obter, ou definir propriedades, via métodos. <br>
+      Esse exemplo usa a propriedade lingua para obter o valor da propriedade idioma:
+    </p>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+        const pessoa = {
+            nome: "Asdrúbal",
+            sobrenome: "Barca",
+            idioma:"Inglês",
+            get lang() {
+                return this.idioma
+            }
+        }
+        document.getElementById("demo").innerHTML = pessoa.lang;
+
+        const pessoa2 = {
+            nome: "Helena",
+            sobrenome: "de Tróia",
+            idioma: "",
+            set lingua(lingua) {
+                this.idioma = lingua.toUpperCase();
+            }
+        }
+
+        pessoa2.lingua = "grego"
+        document.getElementById("demo1").innerHTML = pessoa2.idioma;
+
+    </script>
+  </body>
+</html>
