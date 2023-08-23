@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,9 +8,10 @@
   <body>
     <h2>Palavra chave this</h2>
     <p>Neste exemplo, this se refe ao objeto pessoa.</p>
-    <p>nomeCompleto é um método do objeto pessoas</p>
+    <p>'nomeCompleto' é um método do objeto pessoas</p>
     <p id="demo"></p>
     <p id="demo1"></p>
+    <p id="demo2"></p>
 
     <script>
         const pessoa = {
@@ -18,7 +19,7 @@
             sobrenome: "Silva",
             idade: 34,
             nomeCompleto: function() {
-                return this.nome + " " + this.sobrenome;
+                return (this.nome + " " + this.sobrenome).toUpperCase();
             }
         }
         document.getElementById("demo").innerHTML = pessoa.nomeCompleto();
@@ -27,6 +28,10 @@
             return 70 - this.idade
         }
         document.getElementById("demo1").innerHTML = pessoa.aposentadoria();
+
+        let mensagem = "Alô, mundo";
+        let maiuscula = mensagem.toUpperCase();
+        document.getElementById("demo2").innerHTML = maiuscula;
     </script>
   </body>
 </html>
