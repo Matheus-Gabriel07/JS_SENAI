@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurante</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="module container main">
+        <header>
+          <div class="container_logo">
+            <label id="logo">Grillby`s</label>
+          </div>
+        </header>
+        <div class="container-main-details">
+          <h1>Grillby`s</h1>
+          <nav>
+            <div class="container-nav">
+              <h2>Menu</h2>
+              <div class="container-nav-details">
+                <button id="promocoes" onclick="scroll_promo()">
+                  Promoções
+                </button>
+                <button id="pf" onclick="scroll_prato_feito()">PF</button>
+                <button id="lanches" onclick="scroll_lanches()">Lanches</button>
+                <button id="acompanhamento" onclick="scroll_acompanhamentos()">
+                  Acompanhamentos
+                </button>
+                <button id="bebibas" onclick="scroll_bebidas()">Bebidas</button>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <section class="container-lists container-promoções">
+        <h3>Promoções</h3>
+        <div class="container-details">
+          <div class="container-details-food">
+            <img src="https://comidinhasdochef.com/wp-content/uploads/2020/06/Filé-de-Frango-à-Parmegiana.jpg" alt="food" class="foodImage" />
+            <div class="food-details">
+              <h4>Filé de Frango á Parmegiana</h4>
+              <p>
+                O Verdadeiro Amigos Suculento.... Para os loucos por Parmegiana.
+                Filé de frango empanado em farinha especial regado por molho de
+                tomates caseiro e coberto por queijo mussarela de 1 Acompanha
+                Arroz e Fritas
+              </p>
+            </div>
+            <h5>R$ 20.00</h5>
+          </div>
+
+          <div class="container-details-food">
+            <img src="https://www.dicasdemulher.com.br/wp-content/uploads/2020/01/salmao-grelhado-0.png" alt="food" class="foodImage" />
+            <div class="food-details">
+              <h4>Salmão Grelhado</h4>
+              <p>
+                Salmão grelhado na brasa. Acompanha: arroz branco, batata souté,
+                vinagrete e legumes cozidos. Serve 1 pessoa (650g)
+              </p>
+            </div>
+            <h5>R$ 20.00</h5>
+          </div>
+
+          <div class="container-details-food">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9d-A8QVqC2ck5wfr_i-XBG42qj0whGgyc5Q&usqp=CAU" alt="food" class="foodImage" />
+            <div class="food-details">
+              <h4>A Moda da Casa</h4>
+              <p>
+                Serve Bem 6 pessoas. Acompanha: 1 picanha inteira, 3 linguiças,
+                2 sobrecoxa de frango desossada, arroz, feijão tropeiro,
+                maionese de batatas, vinagrete, cebolete e fritasicing elit.
+              </p>
+            </div>
+            <h5>R$ 20.00</h5>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-lists container-pf">
+        <h3>Prato feito</h3>
+        <div class="container-details">
+          <div class="container-details-food">
+            <img src="https://anamariabraga.globo.com/wp-content/uploads/2020/05/bife-a-cavalo.jpg" alt="food" class="foodImage" />
+            <div class="food-details">
+              <h4>Bife a Cavalo</h4>
+              <p>Acompanha arroz, feijão, fritas ou salada</p>
+            </div>
+            <h5>R$ 20.00</h5>
+          </div>
+
+          <div class="container-details-food">
+            <img src="https://img.saborosos.com.br/imagens/feijoada-1.jpg" alt="food" class="foodImage" />
+            <div class="food-details">
+              <h4>Feijoada</h4>
+              <p>
+                Este prato contempla o mais gostoso: Feijoada com filé mignon
+                suíno, linguiça calabresa e bacon. Acompanha arroz, farofa,
+                couve refogada e torresmo. Ingredientes selecionados a dedo por
+                mim, pra te entregar o melhor dos sabores. O carro chefe tem que
+                ser o melhor né?!
+              </p>
+            </div>
+            <h5>R$ 20.00</h5>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-lists container-lanche">
+        <h3>Lanches</h3>
+        <div class="container-details">
+          <div class="container-details-food">
+            <img src="https://fomix.net.br/plus/storage/images/cache/x-egg1667244558-600-62325611.png" alt="food" class="foodImage" />
+            <div class="food-details">
+              <h4>X-Tudo</h4>
+              <p>
+                Pão de Hamburguer, alface, tomate, carne de hamburguer,
+                mussarela, presunto, bacon e ovos. Obs: Acompanha Batata Frita
+              </p>
+            </div>
+            <h5>R$ 20.00</h5>
+          </div>
+
+          <div class="container-details-food">
+            <img src="https://www.natuslanches.com.br/wp-content/uploads/2014/12/natus-lanches-passo-fundo-45-x-bacon-600x400.png" alt="food" class="foodImage" />
+            <div class="food-details">
+              <h4>X-Bacon</h4>
+              <p>Pao de hamburguer, bacon, hamburguer de carne e queijo.</p>
+            </div>
+            <h5>R$ 20.00</h5>
+          </div>
+
+          <div class="container-details-food">
+            <img src="https://i0.wp.com/adegaehamburgueriarodrigues.dicavaliosa.com.br/wp-content/uploads/2022/03/X-Bacon-Salada-2.png?fit=250%2C250&ssl=1" alt="food" class="foodImage" />
+            <div class="food-details">
+              <h4>X-Salada</h4>
+              <p>
+                Pao de Hamburguer, alface, tomate, hamburguer de carne, e
+                queijo.
+              </p>
+            </div>
+            <h5>R$ 20.00</h5>
+          </div>
+
+          <div class="container-details-food">
+            <img src="https://static.ifood-static.com.br/image/upload/t_low/pratos/79f8d9c5-7dba-4074-bc28-25f12223102a/202004271502_LEv0_e.png" alt="food" class="foodImage" />
+            <div class="food-details">
+              <h4>X-Egg</h4>
+              <p>
+                Pao de Hamburguer, Carne de Hamburguer, ovo e queijo. Obs:
+                Acompanha Fritas
+              </p>
+            </div>
+            <h5>R$ 20.00</h5>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-lists container-acompanhamentos">
+        <h3>Acompanhamentos</h3>
+        <div class="container-details">
+          <div class="container-details-food">
+            <img src="https://denorteasulburguer.com.br/wp-content/uploads/2023/03/fritas-grande.png" alt="food" class="foodImage" />
+            <div class="food-details">
+              <h4>Batata Frita</h4>
+              <p>Porção de batata frita Serve 1 pessoa</p>
+            </div>
+            <h5>R$ 20.00</h5>
+          </div>
+
+          <div class="container-details-food">
+            <img src="https://qph.cf2.quoracdn.net/main-qimg-573f14aeb75466bf238475c4f2e96d83" alt="food" class="foodImage" />
+            <div class="food-details">
+              <h4>Nugttes de Frango</h4>
+              <p>
+                O Empanado Crocante É Feito com Uma Farinha de Rosca
+                Desenvolvida para Deixar Os Empanados Ainda Mais Deliciosos e
+                com Uma Textura Única Além Disso Sua Carne Provém Exclusivamente
+                Do Peito Do Frango Que É Temperada e Moldada em Pequenas Porções
+                Ideais para Aperitivo.
+              </p>
+            </div>
+            <h5>R$ 20.00</h5>
+          </div>
+
+          <div class="container-details-food">
+            <img src="https://images.ctfassets.net/l5fkpck1mwg3/jXsq72HlveX0b9AynjXCc/acccc5cc8c17961dee220c98317843ea/DEL2022-601341-Appetizers_Beer-Battered-Onion-Rings_50_4000x3000.png" alt="food" class="foodImage" />
+            <div class="food-details">
+              <h4>Orion Rings</h4>
+              <p>
+                Deliciosas Cebolas Empanadas fritas, todas nossas porções são
+                pesadas antes de fritar. Foto meramente ilustrativa.
+              </p>
+            </div>
+            <h5>R$ 20.00</h5>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-lists container-bebidas">
+        <h3>Bebidas</h3>
+        <div class="container-details">
+          <div class="container-details-food">
+            <img src="https://images.tcdn.com.br/img/img_prod/948333/coca_cola_350ml_c12_765_1_93ce96b4ae8a24e855b1728913aff9f2.png" alt="food" class="foodImage" />
+            <div class="food-details">
+              <h4>Coca-Cola</h4>
+              <p>Lata 350ml</p>
+            </div>
+            <h5>R$ 20.00</h5>
+          </div>
+
+          <div class="container-details-food">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7xKzPGDml7TGT6DktAczBnae266bcYRH2cA&usqp=CAU" alt="food" class="foodImage" />
+            <div class="food-details">
+              <h4>Coca-Cola</h4>
+              <p>Garrafa 2L</p>
+            </div>
+            <h5>R$ 20.00</h5>
+          </div>
+
+          <div class="container-details-food">
+            <img src="https://cdn.shopify.com/s/files/1/0579/9742/6861/products/567f99248c47dd0f5966c6687c1a19de.png?v=1663352192&width=480&height=480" alt="food" class="foodImage" />
+            <div class="food-details">
+              <h4>Pepsi</h4>
+              <p>Lata 350ml</p>
+            </div>
+            <h5>R$ 20.00</h5>
+          </div>
+
+          <div class="container-details-food">
+            <img src="https://giassi.vtexassets.com/arquivos/ids/644058-800-450?v=638211560559270000&width=800&height=450&aspect=true" alt="food" class="foodImage" />
+            <div class="food-details">
+              <h4>Pepsi Twist</h4>
+              <p>Lata 350ml</p>
+            </div>
+            <h5>R$ 20.00</h5>
+          </div>
+
+          <div class="container-details-food">
+            <img src="https://meufestval.vtexassets.com/arquivos/ids/182493-800-450?v=637727713314670000&width=800&height=450&aspect=true" alt="food" class="foodImage" />
+            <div class="food-details">
+              <h4>Fanta Laranja</h4>
+              <p>Lata 350ml</p>
+            </div>
+            <h5>R$ 20.00</h5>
+          </div>
+
+          <div class="container-details-food">
+            <img src="https://res.cloudinary.com/piramides/image/upload/c_fill,h_564,w_395/v1/products/3734-fanta-uva-lata-350ml-6un.20230815181546.png?_a=AAAOGGX" alt="food" class="foodImage" />
+            <div class="food-details">
+              <h4>Fanta Uva</h4>
+              <p>Lata 350ml</p>
+            </div>
+            <h5>R$ 20.00</h5>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
