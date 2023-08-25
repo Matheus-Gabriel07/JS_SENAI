@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Funções em JS</h1>
+    <p>Uma função pode acessar uma variável declarada dentro dela mesma</p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <p>Fazendo contagem com uma variável global</p>
+    <p id="demo2"></p>
+
+    <script>
+        myFuction();
+        function myFuction() {
+            let a = 4
+            document.getElementById("demo").innerHTML = a * a
+        }
+
+        let b = 4;
+        myFuction2();
+        function myFuction2() {
+            document.getElementById("demo1").innerHTML = b * b
+        }
+
+        let contador = 0;
+        function adicionar() {
+            contador += 1
+        }
+
+        adicionar()
+        adicionar()
+        adicionar()
+        
+        document.getElementById("demo2").innerHTML = contador
+    </script>
+  </body>
+</html>
