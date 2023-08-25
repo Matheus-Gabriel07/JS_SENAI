@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let pessoa = {
+        nome: "Kaique",
+        idade: 17,
+        genero: "Masculino",
+      };
+
+      pessoa.interresses = ["Games", "Arrumar alguem", "ler a biblia", "Programação em JS"];
+      pessoa.bio = function() {
+        return `Meu nome é ${this.nome}, tenho ${this.idade} anos, sou do gênero ${this.genero}, 
+        e gosto de ${this.interresses[0]}, e ${this.interresses[1]}, ${this.interresses[2]},  
+        ${this.interresses[3]}.`
+      }
+      console.log(pessoa.bio())
+    </script>
+  </body>
+</html>
