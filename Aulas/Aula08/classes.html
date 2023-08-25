@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Classes em JS</h1>
+    <p>Criar dois objetos do tipo carro para a classe carro</p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+      class Carro {
+        constructor(nome, ano) {
+          this.nome = nome;
+          this.ano = ano;
+        }
+        uso() {
+          const data = new Date()
+          return data.getFullYear() - this.ano;
+        }
+      }
+      const carro1 = new Carro("Peugeot", 2009);
+      const carro2 = new Carro("Alfa Romeo", 2010);
+
+      document.getElementById("demo").innerHTML =
+        carro1.nome + " " + carro2.nome;
+      document.getElementById("demo1").innerHTML =
+        carro1.uso() + " " + carro2.uso();
+      </script>
+  </body>
+</html>
