@@ -44,3 +44,10 @@ function scroll_bebidas() {
 /**
  * behavior: Determina se a rolagem é instantanea, ou animada suavemente
  */
+
+function topScrool() {
+  window.scroll({
+    top: 0,
+    behavior: "smooth",
+  });
+}
