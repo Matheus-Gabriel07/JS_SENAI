@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Funções com Objetos</h1>
+    <p>
+      A propriedade aguments.legth retorna o número de argumentos recebidos pela
+      função
+    </p>
+    <p id="demo"></p>
+
+    <p>Método 'toString()' retorna a função com uma string</p>
+    <p id="demo1"></p>
+
+    <script>
+      function minhaFuncao(a, b) {
+        return arguments.length;
+      }
+      document.getElementById("demo").innerHTML = minhaFuncao(2, 3);
+
+      function metodo(a, b) {
+        return a * b;
+      }
+      document.getElementById("demo1").innerHTML = metodo.toString();
+    </script>
+  </body>
+</html>

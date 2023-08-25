@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Função Auto Invocada</h1>
+    <p>As funções podem ser invocadas sem serem explicitamente chamadas</p>
+    <p id="demo"></p>
+
+    <script>
+      (function () {
+        document.getElementById("demo").innerHTML =
+          "Chamando uma função invocada";
+      })();
+    </script>
+  </body>
+</html>
