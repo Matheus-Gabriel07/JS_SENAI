@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 onclick="this.innerHTML='i see you'">Hello</h2>
+    <h2 onclick="mudaTexto(this)">Texto</h2>
+    <h2 id="cabecalho">Texto</h2>
+    <div
+      onmouseover="mousePorCima(this)"
+      onmouseout="mouseSaiu(this)"
+      style="background: red; width: 120px; height: 120px; padding: 10px"
+    >
+      Passe o mousePorCima
+    </div>
+    <script>
+      function mudaTexto(id) {
+        id.innerHTML = "Um milhão";
+      }
+      document.getElementById("cabecalho").onclick = exibirSorte;
+
+      function exibirSorte() {
+        document.getElementById("cabecalho").innerHTML = "";
+      }
+
+      function mousePorCima(objeto) {
+        objeto.innerHTML = "Obrigado";
+      }
+
+      function mouseSaiu(objeto) {
+        objeto.innerHTML = "Passe o mouse";
+      }
+    </script>
+  </body>
+</html>

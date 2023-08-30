@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        background: #321a46;
+      }
+      #animation {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background: #aed262;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="mover()">Clique aqui</button>
+    <div id="container">
+      <div id="animation"></div>
+    </div>
+
+    <script>
+      function mover() {
+        let id = null;
+        const elemento = document.getElementById("animation");
+        let posicao = 0;
+        clearInterval(id);
+        id = setInterval(quadro, 5);
+        function quadro() {
+            if (posicao == 350) {
+                clearInterval(id)
+            } else {
+                posicao++
+                elemento.style.top = posicao + "px"
+                elemento.style.left = posicao + "px"
+            }
+        }
+      }
+    </script>
+  </body>
+</html>
