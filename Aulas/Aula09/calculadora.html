@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>O resultado do cálculo é: </p>
+    <p id="demo"></p>
+
+    <script>
+        function exibir(content) {
+            document.getElementById("demo").innerHTML = content
+        }
+
+        function calculadora(num1, num2, callback) {
+            let soma = num1 + num2;
+            //return soma
+            //exibir(soma)
+            callback(soma)
+        }
+
+        calculadora(6,6, exibir)
+        //let resultado = calculadora(1,2)
+        //exibir(resultado)
+    </script>
+  </body>
+</html>

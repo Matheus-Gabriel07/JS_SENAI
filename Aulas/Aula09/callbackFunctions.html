@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Funções Callback</h1>
+    <h2>Sequência de funções</h2>
+    <p>As funções do JS são executadas na sequência em que são chamadas.</p>
+    <p id="demo1"></p>
+
+    <script>
+        function exibir(content) {
+            document.getElementById("demo").innerHTML = content
+        }
+
+        function primeita() {
+            exibir("Kaique");
+        }
+        function segunda() {
+            exibir("Felipe");
+        }
+    </script>
+</body>
+</html>
