@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Promise em JS</h1>
+    <p id="demo1"></p>
+
+    <script>
+      function exibir(content) {
+        document.getElementById("demo1").innerHTML = content;
+      }
+      let promessa = new Promise(function (cumprida, descumprida) {
+        let x = 0;
+
+        if (x == 0) {
+          cumprida("ok");
+        } else {
+          descumprida("Erro");
+        }
+      });
+
+      promessa.then(
+        function (valor) {exibir(valor);},
+        function (erro) {exibir(erro);},
+        );
+    </script>
+  </body>
+</html>
