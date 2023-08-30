@@ -16,6 +16,9 @@
     >
       Passe o mousePorCima
     </div>
+
+    <h2 id="evento">Usa o método addEventListener() para atribuir um clique ao elemento</h2>
+
     <script>
       function mudaTexto(id) {
         id.innerHTML = "Um milhão";
@@ -33,6 +36,10 @@
       function mouseSaiu(objeto) {
         objeto.innerHTML = "Passe o mouse";
       }
+
+      document.getElementById("evento").addEventListener('click', function(){
+        alert("Vida longa a todos")
+      })
     </script>
   </body>
 </html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JS HTML dom</h2>
+    <p>Como acresentar um novo elemento HTML</p>
+    <div id="div1">
+        <p id="p1">Um paragrafo</p>
+        <p id="p2">Um paragrafo</p>
+    </div>
+
+    <script>
+        const paragrafo = document.createElement("p")
+        const no = document.createTextNode("Isto é novo")
+        paragrafo.appendChild(no);
+        const elemento = document.getElementById("div1")
+        elemento.appendChild(paragrafo)
+
+        const paragrafo2 = document.createElement("p1")
+        const no2 = document.createTextNode("Isso é novo, mas vem antes")
+        paragrafo2.appendChild(no2)
+        const filho = document.getElementById("p1")
+        elemento.insertBefore(paragrafo2, filho)
+        
+        document.getElementById("p2").remove()
+    </script>
+</body>
+</html>
