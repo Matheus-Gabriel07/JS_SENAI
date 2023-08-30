@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Geolocalização</h2>
+    <p>clique no botão para obter suas coordenadas</p>
+    <button onclick="obterLocalizacao()">Clique aqui</button>
+    <p id="demo"></p>
+
+    <script>
+        const paragrafo = document.getElementById("demo")
+
+        function obterLocalizacao() {
+            try {
+                navigator.geolocation.getCurrentPosition(mostrarPosicao)
+            } catch (error) {
+                paragrafo.innerHTML = error
+            }
+        }
+
+        function mostrarPosicao(posicao) {
+            paragrafo.innerHTML = "Latitude: " + posicao.coords.latitude +
+            " Longitude: " + posicao.coords.longitude
+        }
+    </script>
+  </body>
+</html>
