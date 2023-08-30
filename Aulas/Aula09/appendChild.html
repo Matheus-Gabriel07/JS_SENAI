@@ -27,6 +27,10 @@
         elemento.insertBefore(paragrafo2, filho)
         
         document.getElementById("p2").remove()
+
+        elemento.removeChild(filho)
+
+        elemento.replaceChild(paragrafo, paragrafo2)
     </script>
 </body>
 </html>

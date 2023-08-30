@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Só sei que nada sei</p>
+    <p>O ignorante afirma, o sábio duvida, o sensato reflete</p>
+    <p>Ah, sei lá!</p>
+    <button onclick="myfunction()">Clique aqui</button>
+    <script>
+      function myfunction() {
+        const listaDeNos = document.querySelectorAll("p");
+        for (let i = 0; i < listaDeNos.length; i++) {
+            listaDeNos[i].style.color = 'red'
+        }
+      }
+    </script>
+  </body>
+</html>
