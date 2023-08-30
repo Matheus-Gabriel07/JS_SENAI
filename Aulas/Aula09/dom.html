@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div>
+      <p id="demo"></p>
+      <p></p>
+      <p class="content"></p>
+      <p class="content"></p>
+
+      <p>Encontrando HTML pelo QuerySelector</p>
+      <script>
+        document.getElementById("demo").innerHTML = "Felicidade é momentanea";
+
+        const elementos = document.getElementsByTagName("p")
+        elementos[0].innerHTML = "Hello"
+        elementos[1].innerHTML = "Hi"
+
+        const pratos = document.getElementsByClassName("content")
+        pratos[0].innerHTML = "Frango"
+        pratos[1].innerHTML = "Batata"
+
+        const sobremesa = document.querySelectorAll("p.content")
+        sobremesa[0].innerHTML = "Pudim"
+        sobremesa[1].innerHTML = "Pudim"
+      </script>
+    </div>
+  </body>
 </html>
