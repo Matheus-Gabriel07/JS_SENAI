@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JS Promise</h2>
+    <p>Espere 3 segundos para esta página mudar</p>
+    <h3 id="demo"></h3>
+
+    <script>
+      const promessa = new Promise(function (cumprida, descumprida) {
+        setTimeout(function () {
+          cumprida("Se entrar, sai comida!");
+        }, 3000);
+      });
+      promessa.then(function (valor) {
+        document.getElementById("demo").innerHTML = valor;
+      });
+    </script>
+  </body>
+</html>
