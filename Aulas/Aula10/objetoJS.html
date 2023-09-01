@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      const meuOBj = {
+        nome: "Leticia",
+        idade: 18,
+        cidade: "São Paulo",
+      };
+      //const meuOBj = JSON.parse('{"nome": "Leticia","idade": 18,"cidade": "São Paulo"}');
+      const myJSON = JSON.stringify(meuOBj)
+      const myObj = JSON.parse(myJSON)
+
+      document.getElementById("demo").innerHTML = myObj.cidade;
+
+    </script>
+  </body>
 </html>
